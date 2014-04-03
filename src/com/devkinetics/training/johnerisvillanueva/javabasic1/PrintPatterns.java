@@ -329,17 +329,17 @@ public class PrintPatterns {
                 System.out.print("  ");
             }
             int num = size-(size-i);
-            String rev = "";
+            String rside = "";
             for(int ct = size-(size-i); ct >= 1; ct--) {
                 System.out.print(" " + num);
                 if(ct != 1) {
                     String str = " " + num;
-                    String temp = str + rev;
-                    rev = temp;
+                    String temp = str + rside;
+                    rside = temp;
                 }
                 num = (num+1) == 10 ? 0 : num+1;
             }
-            System.out.println(rev);
+            System.out.println(rside);
         }
     }
 }
